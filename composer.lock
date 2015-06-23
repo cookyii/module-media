@@ -1,0 +1,116 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "6764d9b0a15312a5a4243742c7f7058f",
+    "packages": [
+        {
+            "name": "cookyii/base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cookyii/base.git",
+                "reference": "323e9acf3b7821068a3c8449b2d39e9efc7250eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/323e9acf3b7821068a3c8449b2d39e9efc7250eb",
+                "reference": "323e9acf3b7821068a3c8449b2d39e9efc7250eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "components\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.ru",
+                    "homepage": "https://rmrevin.ru/",
+                    "role": "Founder and project lead"
+                }
+            ],
+            "description": "Base components Cookyii CMF",
+            "keywords": [
+                "base",
+                "cmf",
+                "component",
+                "cookyii",
+                "yii2"
+            ],
+            "time": "2015-06-19 16:50:58"
+        },
+        {
+            "name": "cookyii/module-account",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cookyii/module-account.git",
+                "reference": "25057f8f2fac10d09dcc16a1751090cc2207504a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cookyii/module-account/zipball/25057f8f2fac10d09dcc16a1751090cc2207504a",
+                "reference": "25057f8f2fac10d09dcc16a1751090cc2207504a",
+                "shasum": ""
+            },
+            "require": {
+                "cookyii/base": "dev-master",
+                "php": ">=5.4.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "cookyii\\modules\\Account\\": "",
+                    "resources\\": "./resources"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Revin Roman",
+                    "email": "roman@rmrevin.ru",
+                    "homepage": "https://rmrevin.ru/",
+                    "role": "Founder and project lead"
+                }
+            ],
+            "description": "Account management module for Cookyii CMF",
+            "keywords": [
+                "account",
+                "cmf",
+                "cookyii",
+                "module",
+                "user",
+                "yii2"
+            ],
+            "time": "2015-06-18 22:34:45"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "cookyii/base": 20,
+        "cookyii/module-account": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4.0"
+    },
+    "platform-dev": []
+}
