@@ -229,12 +229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "e41bcce4dc8dad05d8a98d02346e497403d43ccc"
+                "reference": "b4c2e7e4bcba53bafd82f53e5f1bcb86a10b6c27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/e41bcce4dc8dad05d8a98d02346e497403d43ccc",
-                "reference": "e41bcce4dc8dad05d8a98d02346e497403d43ccc",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/b4c2e7e4bcba53bafd82f53e5f1bcb86a10b6c27",
+                "reference": "b4c2e7e4bcba53bafd82f53e5f1bcb86a10b6c27",
                 "shasum": ""
             },
             "require": {
@@ -244,7 +244,7 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "components\\": ""
+                    "cookyii\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -267,7 +267,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2015-07-11 14:19:21"
+            "time": "2015-07-11 15:19:17"
         },
         {
             "name": "ezyang/htmlpurifier",
