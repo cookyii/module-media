@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "89a9c9ec0025fee16b8ed3168f62f3fa",
+    "hash": "15260b7978d1d3113f71d242f81d8df3",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -229,12 +229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "030b04d90968f5d2e8e92bcf9560832cce48cbcc"
+                "reference": "42178152572f73476919244a7981962edd71b127"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/030b04d90968f5d2e8e92bcf9560832cce48cbcc",
-                "reference": "030b04d90968f5d2e8e92bcf9560832cce48cbcc",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/42178152572f73476919244a7981962edd71b127",
+                "reference": "42178152572f73476919244a7981962edd71b127",
                 "shasum": ""
             },
             "require": {
@@ -267,7 +267,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2015-09-07 17:56:42"
+            "time": "2015-09-09 22:12:30"
         },
         {
             "name": "ezyang/htmlpurifier",
