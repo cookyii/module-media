@@ -133,16 +133,16 @@
         },
         {
             "name": "bower-asset/yii2-pjax",
-            "version": "v2.0.4",
+            "version": "v2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/jquery-pjax.git",
-                "reference": "3f20897307cca046fca5323b318475ae9dac0ca0"
+                "reference": "6818718408086db6bdcf33649cecb86b6b4f9b67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/3f20897307cca046fca5323b318475ae9dac0ca0",
-                "reference": "3f20897307cca046fca5323b318475ae9dac0ca0",
+                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/6818718408086db6bdcf33649cecb86b6b4f9b67",
+                "reference": "6818718408086db6bdcf33649cecb86b6b4f9b67",
                 "shasum": ""
             },
             "require": {
@@ -230,12 +230,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cookyii/base.git",
-                "reference": "cd28c9ea5cd279aaa7bf7b867f37a257cc786920"
+                "reference": "2eb171f507314eca7c9294f5d450cf2f98dc78fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cookyii/base/zipball/cd28c9ea5cd279aaa7bf7b867f37a257cc786920",
-                "reference": "cd28c9ea5cd279aaa7bf7b867f37a257cc786920",
+                "url": "https://api.github.com/repos/cookyii/base/zipball/2eb171f507314eca7c9294f5d450cf2f98dc78fb",
+                "reference": "2eb171f507314eca7c9294f5d450cf2f98dc78fb",
                 "shasum": ""
             },
             "require": {
@@ -269,7 +269,7 @@
                 "cookyii",
                 "yii2"
             ],
-            "time": "2015-09-24 17:17:54"
+            "time": "2015-12-08 09:19:39"
         },
         {
             "name": "ezyang/htmlpurifier",
