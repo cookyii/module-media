@@ -1,20 +1,20 @@
 <?php
 /**
- * MediaQuery.php
+ * Query.php
  * @author Revin Roman
  * @link https://rmrevin.com
  */
 
-namespace cookyii\modules\Media\resources\queries;
+namespace cookyii\modules\Media\resources\Media;
 
 /**
- * Class MediaQuery
- * @package cookyii\modules\Media\resources\queries
+ * Class Query
+ * @package cookyii\modules\Media\resources\Media
  *
- * @method \cookyii\modules\Media\resources\Media|array|null one($db = null)
- * @method \cookyii\modules\Media\resources\Media[]|array all($db = null)
+ * @method Model|array|null one($db = null)
+ * @method Model[]|array all($db = null)
  */
-class MediaQuery extends \yii\db\ActiveQuery
+class Query extends \yii\db\ActiveQuery
 {
 
     /**

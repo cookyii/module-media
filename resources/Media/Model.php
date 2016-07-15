@@ -1,19 +1,20 @@
 <?php
 /**
- * Media.php
+ * Model.php
  * @author Revin Roman
  * @link https://rmrevin.com
  */
 
-namespace cookyii\modules\Media\resources;
+namespace cookyii\modules\Media\resources\Media;
 
 use cookyii\helpers\ApiAttribute;
+use cookyii\modules\Media\media\InternalResource as InternalMediaResource;
 use yii\helpers\FileHelper;
 use yii\helpers\StringHelper;
 
 /**
- * Class Media
- * @package cookyii\modules\Media\resources
+ * Class Model
+ * @package cookyii\modules\Media\resources\Media
  *
  * @property integer $id
  * @property string $mime
@@ -26,8 +27,10 @@ use yii\helpers\StringHelper;
  * @property integer $created_at
  * @property integer $updated_at
  */
-class Media extends \cookyii\db\ActiveRecord
+class Model extends \cookyii\db\ActiveRecord
 {
+
+    static $tableName = '{{%media}}';
 
     /** @var string */
     public static $mediaModule = 'media';
@@ -170,7 +173,8 @@ class Media extends \cookyii\db\ActiveRecord
 
         \Yii::beginProfile(sprintf('pushing file `%s`', $id), __METHOD__);
 
-        $NewModel = new static();
+        /** @var static $NewModel */
+        $NewModel = new static;
         $NewModel->path = $Resource->getTemp();
 
         $Model = static::find()
@@ -203,12 +207,8 @@ class Media extends \cookyii\db\ActiveRecord
     {
         $image = \Yii::getAlias(static::getMediaModule()->placeholderAlias);
 
-        /** @var \cookyii\modules\Media\media\InternalResource $Resource */
-        $Resource = \Yii::createObject(
-            \cookyii\modules\Media\media\InternalResource::className(), [
-                ['source' => $image],
-            ]
-        );
+        /** @var InternalMediaResource $Resource */
+        $Resource = \Yii::createObject(InternalMediaResource::className(), [['source' => $image]]);
 
         return static::push($Resource);
     }
@@ -279,22 +279,11 @@ class Media extends \cookyii\db\ActiveRecord
     }
 
     /**
-     * @return \cookyii\modules\Media\resources\queries\MediaQuery
+     * @return Query
      */
     public static function find()
     {
-        return \Yii::createObject(
-            \cookyii\modules\Media\resources\queries\MediaQuery::className(),
-            [get_called_class()]
-        );
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public static function tableName()
-    {
-        return '{{%media}}';
+        return \Yii::createObject(Query::class, [get_called_class()]);
     }
 
     /**
